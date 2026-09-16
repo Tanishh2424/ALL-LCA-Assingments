@@ -1,0 +1,14 @@
+import numpy as np
+matrix1 = np.array([
+    [7, 8, 9]
+])
+
+matrix2 = np.array([
+
+    [3, 2, 1]
+])
+
+result = matrix1 + matrix2
+
+print("Addition using NumPy Arrays:")
+print(result)
