@@ -1,0 +1,28 @@
+x = input("Enter your name: ")
+y = input("Enter your age: ")
+z = input("Enter your Divsion:  ")
+dict_1 = dict( name = x , age = y , Division = z )
+list_1 = list( (x , y , z))
+print(list_1)
+tuple_1 = tuple((x , y , z))
+print(tuple_1)
+condition = input("Do you want to modify: ")
+modifications = input("How do you want to modify: ")
+if condition == "Yes":
+  if modifications == "Update":
+    a = input("Enter your keyword: ")
+    b = input("Enter your value: ")
+    dict_1.update({a : b})
+    print(dict_1)
+  elif modifications == "Delete":
+    a = input("Enter your keyword: ")
+    del dict_1[a]
+    print(dict_1)
+  elif modifications == "Add":
+    a = input("Enter your keyword: ")
+    b = input("Enter your value: ")
+    dict_1[a] = b
+    print(dict_1)
+else:
+  pass
+
