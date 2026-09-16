@@ -1,0 +1,14 @@
+def right_angle_triangle():
+    l1 = float(input("Enter first side: "))
+    l2 = float(input("Enter second side: "))
+    l3 = float(input("Enter third side: "))
+    if l1 >l2 >l3 or l1 > l3 >l2 and l1**2 == l2**2 + l3**2:
+      print("The triangle is right angled triangle")
+    elif l1 < l2 and l2 >l3 and l2**2 == l1**2 + l3**2:
+      print("The triangle is right angled triangle")
+    elif l3 > l1 and l3 > l2 and l3**2 == l1**2 + l2**2:
+      print("The triangle is right angled triangle")
+    else:
+      print("The triangle is not a right angled triangle")
+
+right_angle_triangle()
